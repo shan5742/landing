@@ -21,13 +21,18 @@ $space-huge: $size-unit * 8;
 
 $white: #ffffff;
 $black: #000000;
-$dark-blue: #112d4e;
-$blue: #3f72af;
-$light-blue: #dbe2ef;
+$dark-blue: #111828;
+$blue: #4c6df3;
+$light-blue: #2cb4ff;
+$dark-bg: #202a38;
+$grey: #4c5564;
+$text-color: #a9a9a9;
 $off-white: #f9f7f7;
 $red: #ea5455;
 
 $text-colour: $black;
+
+$br: $x2;
 
 $font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
   "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
@@ -157,6 +162,8 @@ $weights: (
   --lh-crazy: #{rem(72px)};
 }
 
+$max-width: 1200px;
+
 html,
 body {
   height: 100%;
@@ -164,6 +171,9 @@ body {
   margin: 0;
   font-family: $font-family;
   -webkit-font-smoothing: antialiased;
+  background-color: $dark-blue;
+  color: $text-color;
+  @include font-scale(base);
 }
 
 :root {
@@ -173,4 +183,6 @@ body {
 input,
 button {
   font-family: $font-family;
+  color: $off-white;
+  @include font-scale(base, bold);
 }

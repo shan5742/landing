@@ -1,1 +1,25 @@
 @import "../../styles/globals.scss";
+
+.navWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: $x1 0;
+}
+
+.logo {
+  @include font-scale("x-large", bold);
+  margin: 0;
+  color: $off-white;
+}
+
+.links {
+  display: flex;
+  list-style: none;
+  align-items: center;
+
+  .link {
+    margin-left: $x1;
+    cursor: pointer;
+  }
+}

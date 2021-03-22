@@ -1,1 +1,33 @@
 @import "../../styles/globals.scss";
+
+.heroSection {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: $space-huge 0;
+
+  .heroContent {
+    width: 60%;
+
+    .title {
+      @include font-scale("super", bold);
+      margin: 0;
+      color: $off-white;
+    }
+
+    .content {
+      padding: $x2 0;
+    }
+  }
+
+  .illustration {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+
+    .heroImage {
+      width: 70%;
+      border-radius: $br;
+    }
+  }
+}
