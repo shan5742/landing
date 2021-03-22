@@ -1,6 +1,5 @@
 import React from "react";
 import s from "./Nav.module.scss";
-import { useInView } from "react-intersection-observer";
 import Button from "../Button/Button";
 
 export default function Nav() {
